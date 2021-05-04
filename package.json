@@ -5,6 +5,9 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
+    "install-all": "npx run-p install:*",
+    "install:main": "npm install --prefix ./main",
+    "install:renderer": "npm install --prefix ./renderer",
     "build": "npx run-p build:* && npm run dist",
     "build:main": "npm run --prefix ./main build",
     "build:renderer": "npm run --prefix ./renderer build",
