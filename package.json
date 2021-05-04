@@ -5,6 +5,10 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
+    "build": "npx run-p build:* && npm run dist",
+    "build:main": "npm run --prefix ./main build",
+    "build:renderer": "npm run --prefix ./renderer build",
+    "dist": "rm -rf dist && mkdir dist && cp -r main/build/* dist && cp -r renderer/build/* dist",
     "start": "npx electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
