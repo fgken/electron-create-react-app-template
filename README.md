@@ -1,6 +1,6 @@
 # electron-create-react-app-template
 
-## How to run electron app
+## How to run
 
 ```
 git clone https://github.com/fgken/electron-create-react-app-template.git
